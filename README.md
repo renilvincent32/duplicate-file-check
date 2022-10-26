@@ -11,7 +11,7 @@ If you have JDK 17 installed on your machine, please checkout the code and run t
  - Please provide folderPath as a relative or absolute path. The compare mode could be 0, 1 or 2.
 
 If you do not have JDK 17 installed, you may run the service within the docker container. You need to have docker runtime installed in your machine.
- - Kindly copy the required test files into the testFiles folder in the project
+ - Kindly copy the required test files into the testFiles folder in the project. This is an extremely important step.
  - Goto the project root folder and run the following command
  - `docker build . -t duplicate-service` - this creates a docker image. You may verify image is created successfully by running `docker images`.
  - Once the image is successfully created, run the following command
