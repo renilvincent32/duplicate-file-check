@@ -2,7 +2,7 @@
 A simple console application, written in Java, to check for duplicate files in a given folder. The application would scan through the files in a given folder path, and identifies the potential duplicate candidates either by comparing w.r.t size, name or both size and name. Comparison mode is an optional argument provided by the user. Once the potential candidates are identified, we compare files using the MD5 hash and identifies the duplicate files.
 
 ## Assumptions
- - Only files with text content are considered, to reduce the complexity (*.sql, *.json, *.txt etc)
+ - Only files with text content are considered, to reduce the complexity (*.sql, *.json, *.txt etc). Excel files are not supported.
  - 2 files are considered to be identical by name, if the initial 5 characters match.
 
 ## Preconditions
