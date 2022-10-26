@@ -22,9 +22,10 @@ If you do not have JDK 17 installed, you may run the service within the docker c
 ## Expected Results
 Duplicate files are logged in the console itself, along with the Compare mode. Please find an example below.
 
-`Compare mode: NAME
-Duplicate files: [/testFiles/firstFile_copy2.txt, /testFiles/firstFile_copy.txt]
-Duplicate files: [/testFiles/firstFile copy.txt, /testFiles/firstFile.txt]`
+`Compare mode: SIZE_AND_NAME
+Duplicate files: [secondFile.txt, secondFile copy 2.txt]
+Duplicate files: [firstFile_copy2.txt, firstFile_copy.txt]
+Duplicate files: [firstFile copy.txt, firstFile.txt]`
 
 ## Cleanup
 You can stop the docker containers by running the following commands:
