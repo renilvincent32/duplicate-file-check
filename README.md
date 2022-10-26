@@ -9,7 +9,7 @@ A simple console application, written in Java, to check for duplicate files in a
 If you have JDK 17 installed on your machine, please checkout the code and run the following commands:
  - Goto the project root folder and run the following command
  - `java -jar out/artifacts/duplicate_check_program_jar/duplicate-check-program.jar ${folderPath} ${compareMode}`
- - Please provide folderPath as a relative or absolute path. The compare mode could be 0 (SIZE), 1 (NAME) or 2 (SIZE AND NAME). 
+ - Please provide folderPath as a relative or absolute path. The compare mode could be 0 (SIZE), 1 (NAME) or 2 (SIZE AND NAME). Default value is 2.
 
 If you do not have JDK 17 installed, you may run the service within the docker container. You need to have docker runtime installed in your machine.
  - Kindly copy the required test files into the testFiles folder in the project. This is an extremely important step.
