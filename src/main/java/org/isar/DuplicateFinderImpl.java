@@ -22,10 +22,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
      */
     public Map<String, List<Path>> getCandidates(String folderPath, CompareMode mode) {
         try (Stream<Path> paths = Files.walk(Paths.get(folderPath))) {
-            List<Path> allFiles = paths
-                    .filter(Files::isRegularFile)
-                    .filter(path -> FilenameUtils.getExtension(path.toString()).equals("txt"))
-                    .toList();
+            List<Path> allFiles = paths.toList();
             return getIdenticalFilesByCompareMode(allFiles, mode);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -63,7 +60,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
                         .stream()
                         .filter(paths -> paths.size() > 1)
                         .forEach(files -> {
-                            System.out.println("Duplicate files: " + files);
+                            System.out.println("Duplicate files: " + files.stream().map(Path::getFileName).toList());
                         });
     }
 
