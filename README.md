@@ -15,5 +15,15 @@ If you do not have JDK 17 installed, you may run the service within the docker c
  - Goto the project root folder and run the following command
  - `docker build . -t duplicate-service` - this creates a docker image
  - Once the image is successfully created, run the following command
- - `docker run duplicate-service {compareMode}`
+ - `docker run duplicate-service {compareMode}` - this runs the docker container based on the image created before. Compare mode can be passed as a runtime argument into the container
  - Again, compareMode is optional. You could give 0, 1 or 2. By default, it takes 2
+
+## Expected Results
+Duplicate files are logged in the console itself, along with the Compare mode. Please find an example below.
+
+`Compare mode: NAME
+Duplicate files: [/testFiles/firstFile_copy2.txt, /testFiles/firstFile_copy.txt]
+Duplicate files: [/testFiles/firstFile copy.txt, /testFiles/firstFile.txt]`
+
+## Cleanup
+You can stop the docker containers
