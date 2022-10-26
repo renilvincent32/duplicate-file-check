@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="duplicate-check-program:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/duplicate_check_program_jar</output-path>
+    <root id="archive" name="duplicate-check-program.jar">
+      <element id="module-output" name="duplicate-check-program" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
