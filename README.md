@@ -28,7 +28,7 @@ Duplicate files: [firstFile_copy2.txt, firstFile_copy.txt]
 Duplicate files: [firstFile copy.txt, firstFile.txt]`
 
 ## Cleanup
-You can stop the docker containers by running the following commands:
+You can remove the docker container and image by running the following commands:
  - `docker stop $(docker ps -a -q)`
  - `docker rm $(docker ps -a -q)  `
  - `docker rmi duplicate-service`
